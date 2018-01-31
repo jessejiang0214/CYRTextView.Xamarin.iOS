@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>CYRTextView</id>
+    <version>1.0.0</version>
+    <title>CYRTextView.Xamarin.iOS</title>
+    <authors>Jesse Jiang @ XAM Consulting</authors>
+    <owners>Jesse Jiang @ XAM Consulting</owners>
+    <projectUrl>https://github.com/jessejiang0214/CYRTextView.Xamarin.iOS</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Xamarin binding library for CYRTextView</description>
+    <tags>Xamarin, Xamarin.iOS, CYRTextView</tags>
+    <releaseNotes>
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="CYRTextViewXamariniOS/bin/Release/CYRTextViewXamariniOS.dll" target="lib\Xamarin.iOS10" />
+  </files>
+</package>
