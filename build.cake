@@ -18,7 +18,10 @@ Task("Clean")
 {
     CleanDirectories ("./**/bin");
 	CleanDirectories ("./**/obj");
-    DeleteDirectory ("./CYRTextViewXamariniOS/CYRTextViewKit.framework", recursive:true);
+    if(DirectoryExists("./CYRTextViewXamariniOS/CYRTextViewKit.framework"))
+    {
+        DeleteDirectory ("./CYRTextViewXamariniOS/CYRTextViewKit.framework", recursive:true);
+    }
 });
 
 // Task("Restore-NuGet-Packages")
@@ -83,7 +86,6 @@ Task("General-NuGet-Packages")
 Task("Default")
     .IsDependentOn("Build-XamarinBindingLibrary")
     .IsDependentOn("General-NuGet-Packages")
-    //.IsDependentOn("Build-Android")
     ;
 
 //////////////////////////////////////////////////////////////////////
